@@ -387,7 +387,7 @@ class SimpleXMLElement(object):
                 value = d.setdefault(name, [])
                 # If the node has no children then the node itself might
                 # have multiple occurrences:
-                children = node.children() or node
+                children = node.children()
                 # TODO: check if this was really needed (get first child only)
                 ##if len(fn[0]) == 1 and children:
                 ##    children = children()
